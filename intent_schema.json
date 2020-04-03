@@ -1,0 +1,76 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "health tracker",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RecordInteraction",
+                    "slots": [],
+                    "samples": [
+                        "stop a recording",
+                        "start a recording",
+                        "record my interaction"
+                    ]
+                },
+                {
+                    "name": "AllergyForecast",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "find out the allergy forecast for {date}",
+                        "what is the allergy forecast for {date}",
+                        "get an allergy forecast for {date}",
+                        "get the allergy forecast for {date}"
+                    ]
+                },
+                {
+                    "name": "TrackDosage",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "find out my dosage schedule for {date}",
+                        "what is my dosage schedule for {date}"
+                    ]
+                },
+                {
+                    "name": "ScheduleAppointment",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "can you schedule an appointment for {date}",
+                        "schedule an appointment for {date}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
